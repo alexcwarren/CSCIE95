@@ -1,2 +1,5 @@
+CC=gcc
+CFLAGS=-I.
+
 word-count.out: word-count.c
-	gcc -o word-count.out word-count.c -I.
+	$(CC) -o word-count.out word-count.c $(CFLAGS)
